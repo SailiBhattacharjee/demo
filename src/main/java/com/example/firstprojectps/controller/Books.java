@@ -6,13 +6,20 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
 public class Books {
 
     @Id
-    public int bookId;
+    public int bookId=2;
 
-    public String bookName = "SAI";
+    public String bookName = "pritam";
+
+    @Override
+    public String toString() {
+        return "Books{" +
+                "bookId=" + bookId +
+                ", bookName='" + bookName + '\'' +
+                '}';
+    }
 
     public Books(){
 
